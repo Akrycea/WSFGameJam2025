@@ -3,13 +3,13 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
-WSFGameJam2025/[Ll]ibrary/
-WSFGameJam2025/[Tt]emp/
-WSFGameJam2025/[Oo]bj/
-WSFGameJam2025/[Bb]uild/
-WSFGameJam2025/[Bb]uilds/
-WSFGameJam2025/[Ll]ogs/
-WSFGameJam2025/[Uu]ser[Ss]ettings/
+WSF2025/[Ll]ibrary/
+WSF2025/[Tt]emp/
+WSF2025/[Oo]bj/
+WSF2025/[Bb]uild/
+WSF2025/[Bb]uilds/
+WSF2025/[Ll]ogs/
+WSF2025/[Uu]ser[Ss]ettings/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
@@ -18,10 +18,10 @@ WSFGameJam2025/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
-WSFGameJam2025/[Mm]emoryCaptures/
+WSF2025/[Mm]emoryCaptures/
 
 # Recordings can get excessive in size
-WSFGameJam2025/[Rr]ecordings/
+WSF2025/[Rr]ecordings/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -81,19 +81,19 @@ InitTestScene*.unity*
 
 # Addressables default ignores, before user customizations
 /ServerData
-WSFGameJam2025/[Aa]ssets/StreamingAssets/aa*
-WSFGameJam2025/[Aa]ssets/AddressableAssetsData/link.xml*
-WSFGameJam2025Aa]ssets/Addressables_Temp*
+WSF2025/[Aa]ssets/StreamingAssets/aa*
+WSF2025/[Aa]ssets/AddressableAssetsData/link.xml*
+WSF2025Aa]ssets/Addressables_Temp*
 # By default, Addressables content builds will generate addressables_content_state.bin
 # files in platform-specific subfolders, for example:
 # /Assets/AddressableAssetsData/OSX/addressables_content_state.bin
 /[Aa]ssets/AddressableAssetsData/*/*.bin*
 
 # Visual Scripting auto-generated files
-WSFGameJam2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
-WSFGameJam2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
-WSFGameJam2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
-WSFGameJam2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+WSF2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+WSF2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+WSF2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+WSF2025/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
