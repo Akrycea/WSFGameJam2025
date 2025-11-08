@@ -5,6 +5,8 @@ public class CameraRight : MonoBehaviour
 {
     public bool mouseRover = false;
 
+    public CameraManager cameraManager;
+
     void Update()
     {
 
@@ -12,7 +14,10 @@ public class CameraRight : MonoBehaviour
 
     private void OnMouseOver()
     {
-        mouseRover = true;
+        if (cameraManager.canMoveCamera)
+        {
+            mouseRover = true;
+        }
     }
 
 

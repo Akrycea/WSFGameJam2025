@@ -8,12 +8,14 @@ public class CameraManager : MonoBehaviour
     public Transform targetL;
     public Transform targetR;
 
+    public bool canMoveCamera;
+
 
 
 
     void Start()
     {
-        
+        canMoveCamera = true;
     }
 
 

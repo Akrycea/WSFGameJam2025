@@ -5,6 +5,7 @@ public class CameraLeft : MonoBehaviour
 {
     public bool mouseLover = false;
 
+    public CameraManager cameraManager;
     void Update()
     {
 
@@ -12,7 +13,10 @@ public class CameraLeft : MonoBehaviour
 
     private void OnMouseOver()
     {
-        mouseLover = true;
+        if (cameraManager.canMoveCamera)
+        {
+            mouseLover = true;
+        }
     }
 
 
