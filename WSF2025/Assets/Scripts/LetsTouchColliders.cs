@@ -34,13 +34,13 @@ public class LetsTouchColliders : MonoBehaviour
             if (ptakDoKlatki == true)
             {
                 puzzleMinigierka.Puzzle();
-                dialogueRunner.StartDialogue("_2PRE1");
+                dialogueRunner.StartDialogue(nazwaDialogu);
             }
 
             if (ziarna == true)
             {
                 gameObject.SetActive(false);
-                dialogueRunner.StartDialogue("_2PRE2");
+                dialogueRunner.StartDialogue(nazwaDialogu);
             }
         }
     }
