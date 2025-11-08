@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class Brick : MonoBehaviour
 
     private Camera mainCamera;
 
+    private AudioSource audioSource;
+
+    public BlackOut blackOut;
+
 
     void Start()
     {
         mainCamera = Camera.main;
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -35,7 +40,10 @@ public class Brick : MonoBehaviour
             Debug.Log("włożona cegła do wora");
             targetRight.GetComponent<Transform>();
             targetRight.transform.position = new Vector3(12, -0.02f, -10);
-            Destroy(gameObject);
+            //nwm czy dawać bo ten sam dźwięk szybko po sobie jest
+            //audioSource.Play();
+            blackOut.BlackOutStart();
+            StartCoroutine(Wait());
         }
     }
 
@@ -44,6 +52,7 @@ public class Brick : MonoBehaviour
     {
         grabbed = true;
         gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        audioSource.Play();
 
     }
 
@@ -53,4 +62,9 @@ public class Brick : MonoBehaviour
         gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+    }
 }

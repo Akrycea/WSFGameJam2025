@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BRELOK_POST_0: -8740405317310690356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      POKRETLA_PRE_0: 6239205030702808281
+      POKRETLA_PRE_1: 5726412588076755546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

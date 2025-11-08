@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JABLKA_PRE_0: 2317454682139562530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

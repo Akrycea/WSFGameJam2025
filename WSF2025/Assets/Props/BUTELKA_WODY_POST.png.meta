@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BUTELKA_WODY_POST_0: -3913693148917170037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
