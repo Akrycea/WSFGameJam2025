@@ -1,6 +1,31 @@
 ﻿title: _3PREstart
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+Ough! Mom always makes me pick stuff for her. 
+She probably thinks this is fun for me, but I know she uses this as an excuse to use her phone! 
+She’s been on it so often recently.
+Whatever she’s doing on it it’s clearly stressing her out. 
+Maybe it's a sign to stop using her phone so much!
+She yells at me when I use it too often.
+===
+
+title: _3PRE1
+---
+I don’t even like this.
+===
+title: _3PRE2
+---
+I think she might be making my favourite…
+===
+title: _3PRE3
+---
+Why do we need so much medicine recently? We’re all healthy.
+===
+
+title: _3PRE4
+---
+Found everything from the list! I think it’s time to look for something for myself! I deserve a treat after so much hard work.
+
+I’ve heard on TV that this shop has my favourite band’s keychain! Maybe I can snag one and mom won’t notice.
 ===
 
 title: _3PREend
@@ -8,3 +33,32 @@ title: _3PREend
 What! What do you mean sold out?! This is the worst day of my life…
 <<3PREChangeScene BoxColldier>>
 ===
+
+title: _3PRErick
+---
+Rick: Come on man!
+Rick: Ey you! Little man!
+Rick: Your mom willing to buy this for me?
+She won’t even get me a soda, no way.
+Rick: Shoot.
+Rick: I wanted to have at least one more before They put us all in cages.
+They won’t do that.
+Rick: Did your mommy tell you that?
+No. But they have no reason to lock us up unless someone breaks the law.
+Rick: You gonna rat me out?
+Not if you snag me one of those keychains from your work.
+Rick: You think working at Comic Haze means I get the merch for free or what?
+Rick: I do.
+Rick: But I don’t think your mommy would approve.
+Rick come on!
+Rick: Should have said yes to me at the beginning lil’ rat!
+Rick: See ya around noob.
+===
+
+
+
+
+
+
+
+
