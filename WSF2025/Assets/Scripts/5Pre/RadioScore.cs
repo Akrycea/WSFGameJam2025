@@ -39,7 +39,7 @@ public class RadioScore : MonoBehaviour
         if (score > 20)
         {
             Debug.Log("win");
-            SceneManager.LoadScene("5Post");
+            SceneManager.LoadScene("5POST");
         }
     }
 }
