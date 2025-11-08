@@ -6,6 +6,8 @@ public class ScaryRadio : MonoBehaviour
 {
     private AudioSource audioSource;
     public AudioClip[] clips;
+    public bool done = false;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -22,13 +24,14 @@ public class ScaryRadio : MonoBehaviour
     {
         audioSource.clip = clips[1];
         audioSource.Play();
+        done = true;
         //audioSource.Stop();
-        StartCoroutine(Wait());
+        //StartCoroutine(Wait());
     }
 
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("2PRE");
-    }
+    //IEnumerator Wait()
+    //{
+    //    yield return new WaitForSeconds(2);
+    //    SceneManager.LoadScene("2PRE");
+    //}
 }
