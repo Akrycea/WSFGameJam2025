@@ -11,17 +11,20 @@ Here birdie! You like being in the cage right?
 title: _2PRE2
 ---
 Hmm, here’s some seeds! You’ll be my best friend in no time.
+<<SeedSound1 klatka>>
 ===
 
 title: _2PRE23
 ---
 More seeds! Birds like seeds!
+<<SeedSound2 klatka>>
 ===
 
 title: _2PRE3
 ---
 Let me pet you birdie! We’re besties now, aren’t we?
 //tu mozna cos dac
+<<ScreamSund1 klatka>>
 OW!
 //tutaj wstaw green / red tint
 

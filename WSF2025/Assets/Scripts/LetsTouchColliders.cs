@@ -11,6 +11,13 @@ public class LetsTouchColliders : MonoBehaviour
     public string nazwaDialogu;
     public DialogueRunner dialogueRunner;
 
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == ObjectName)
@@ -41,6 +48,7 @@ public class LetsTouchColliders : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 dialogueRunner.StartDialogue(nazwaDialogu);
+                audioSource.Play();
             }
         }
     }
