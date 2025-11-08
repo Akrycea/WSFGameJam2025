@@ -25,8 +25,14 @@ public class ScaryRadio : MonoBehaviour
         audioSource.clip = clips[1];
         audioSource.Play();
         done = true;
-        //audioSource.Stop();
-        //StartCoroutine(Wait());
+        StartCoroutine(Wait());
+        
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+        audioSource.Stop();
     }
 
     //IEnumerator Wait()
