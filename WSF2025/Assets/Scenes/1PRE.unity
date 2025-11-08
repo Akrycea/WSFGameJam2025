@@ -1409,6 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3f1393394862347a3d5157087be59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackout: {fileID: 0}
 --- !u!114 &964187139 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}

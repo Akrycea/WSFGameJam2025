@@ -44,6 +44,7 @@ public class YarnSceneManager : MonoBehaviour
 
     }
 
+<<<<<<< Updated upstream
     [YarnCommand("ScreamSund1")]
     public void ScreamSound()
     {
@@ -64,4 +65,11 @@ public class YarnSceneManager : MonoBehaviour
     }
 
 
+=======
+    [YarnCommand("3PREChangeScene")]
+    public void changeScene4()
+    {
+        SceneManager.LoadScene("3POST");
+    }
+>>>>>>> Stashed changes
 }

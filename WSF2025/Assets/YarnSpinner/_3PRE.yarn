@@ -1,0 +1,10 @@
+﻿title: _3PREstart
+---
+This is an example of a Yarn Spinner script. Write your dialogue here!
+===
+
+title: _3PREend
+---
+What! What do you mean sold out?! This is the worst day of my life…
+<<3PREChangeScene BoxColldier>>
+===
