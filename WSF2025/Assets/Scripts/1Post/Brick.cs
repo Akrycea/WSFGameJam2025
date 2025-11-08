@@ -39,11 +39,15 @@ public class Brick : MonoBehaviour
         {
             Debug.Log("włożona cegła do wora");
             targetRight.GetComponent<Transform>();
-            targetRight.transform.position = new Vector3(12, -0.02f, -10);
+            targetRight.transform.position = new Vector3(20, -0.02f, -10);
             //nwm czy dawać bo ten sam dźwięk szybko po sobie jest
             //audioSource.Play();
             blackOut.BlackOutStart();
             StartCoroutine(Wait());
+        }
+        else
+        {
+            audioSource.Play();
         }
     }
 
