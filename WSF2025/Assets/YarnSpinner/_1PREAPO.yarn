@@ -1,0 +1,31 @@
+﻿title: _1PREAPOstart
+---
+I’ve lost mom again, she always wanders off when talking to someone on the phone.
+===
+
+title: _1PREAPO1
+---
+Honestly? I hate this place! I hate coming to this stupid mall!
+===
+
+title: _1PREAPO2
+---
+It’s so booooring... I have to follow mom all day and she doesn’t care that I don’t care!!
+===
+
+title: _1PREAPO3
+---
+She doesn't even check fun stores! Just clothes, hairstyliest and that's like it!!!
+===
+
+title: _1PREAPO4
+---
+The only fun place in this boomer hole is the supermarket. I always try to sneak something for myself into the cart without her knowing! She does notice usually though.
+===
+
+title: _1PREAPOmom
+---
+Mom: Oh my god baby! There you are, I was so worried about you! Don’t disappear like that ever again okay?
+<<momChangeScene mama>>
+===
+

@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class LetsTouchColliders : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class LetsTouchColliders : MonoBehaviour
     public bool jestNaObiekcie = false;
     public bool ptakDoKlatki;
     public bool ziarna;
+    public string nazwaDialogu;
+    public DialogueRunner dialogueRunner;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,11 +34,13 @@ public class LetsTouchColliders : MonoBehaviour
             if (ptakDoKlatki == true)
             {
                 puzzleMinigierka.Puzzle();
+                dialogueRunner.StartDialogue("_2PRE1");
             }
 
             if (ziarna == true)
             {
                 gameObject.SetActive(false);
+                dialogueRunner.StartDialogue("_2PRE2");
             }
         }
     }

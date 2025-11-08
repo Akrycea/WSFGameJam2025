@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Yarn.Unity;
 
 public class DisappearPeople : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DisappearPeople : MonoBehaviour
     float alphaLevel;
     //czy couroutine isrunning, nwm bez tego robi kilka naraz
     bool isRunning = false;
+    public string nazwaDialogu;
+    public DialogueRunner dialogueRunner;
 
     void Start()
     {
@@ -26,6 +29,7 @@ public class DisappearPeople : MonoBehaviour
         if (alphaLevel <= 0f)
         {
             Destroy(gameObject);
+            dialogueRunner.StartDialogue(nazwaDialogu);
         }
     }
 
