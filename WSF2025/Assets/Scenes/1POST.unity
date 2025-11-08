@@ -1197,6 +1197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55396ee73badcaf44b9c356cbe99d709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 5ebfe268765307649aa3dc97c3a2e917, type: 3}
+  - {fileID: 8300000, guid: e1fcc81a540a5724cb22b51c560b7661, type: 3}
 --- !u!1 &1739442681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1299,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1674034181564917681, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 2eeb91fd53e838f4ab82de15673769ef, type: 3}
+    - target: {fileID: 1674034181564917681, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2eeb91fd53e838f4ab82de15673769ef, type: 3}
     - target: {fileID: 1964839663976029265, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1340,6 +1351,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7469336059950895159, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 2eeb91fd53e838f4ab82de15673769ef, type: 3}
+    - target: {fileID: 7469336059950895159, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2eeb91fd53e838f4ab82de15673769ef, type: 3}
     - target: {fileID: 8623081228384138159, guid: ac1c3e36fbe57234b9ea7eb2c656eff6, type: 3}
       propertyPath: m_Name
       value: Main Camera

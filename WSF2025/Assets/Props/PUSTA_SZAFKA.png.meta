@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PUSTA_SZAFKA_0: 8077778468301762932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

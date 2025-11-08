@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using Yarn.Unity;
 
 public class DisappearPeople : MonoBehaviour
@@ -13,9 +14,13 @@ public class DisappearPeople : MonoBehaviour
     public string nazwaDialogu;
     public DialogueRunner dialogueRunner;
 
+    private AudioSource audioSource;
+    public AudioClip[] clipList;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         alphaLevel = 1f;
     }
 
@@ -38,6 +43,12 @@ public class DisappearPeople : MonoBehaviour
     private void OnMouseDown()
     {
         if (!isRunning) StartCoroutine(Wait());
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = clipList[Random.Range(0, clipList.Length)];
+            audioSource.Play();
+        }
     }
 
     //couroutina odpowiadajaca za powolne znikanie obiektu

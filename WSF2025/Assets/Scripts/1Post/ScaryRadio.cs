@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class ScaryRadio : MonoBehaviour
 {
     private AudioSource audioSource;
+    public AudioClip[] clips;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -19,7 +20,9 @@ public class ScaryRadio : MonoBehaviour
 
     private void OnMouseDown()
     {
+        audioSource.clip = clips[1];
         audioSource.Play();
+        //audioSource.Stop();
         StartCoroutine(Wait());
     }
 

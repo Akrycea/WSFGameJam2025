@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WRONG_BLUZKA_1_0: -6467390124164872275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
