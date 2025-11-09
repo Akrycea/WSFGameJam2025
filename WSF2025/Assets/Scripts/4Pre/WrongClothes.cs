@@ -29,11 +29,6 @@ public class WrongClothes : MonoBehaviour
         {
             dialRunner.StartDialogue("_4PRE1");
 
-            dialRunner.StartDialogue("_4PRE1");
-
-
-            dialRunner.StartDialogue("_4PRE1");
-
         }
     }
 
