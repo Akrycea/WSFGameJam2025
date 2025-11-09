@@ -7,11 +7,12 @@ public class DraggingToBag : MonoBehaviour
 
     private Camera mainCamera;
 
+    private AudioSource audioSource;
 
     void Start()
     {
         mainCamera = Camera.main;
-
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
 
@@ -38,7 +39,7 @@ public class DraggingToBag : MonoBehaviour
     {
         grabbed = true;
         gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-
+        audioSource.Play();
     }
 
     private void OnMouseUp()

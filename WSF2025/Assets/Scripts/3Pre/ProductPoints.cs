@@ -22,7 +22,7 @@ public class ProductPoints : MonoBehaviour
 
     private void Update()
     {
-        if(points == 5)
+        if(points == 4)
         {
             shelfCollider.SetActive(true);
             //po skoñczeniu dialogu cut do nastepnej sceny
