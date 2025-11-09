@@ -1,4 +1,15 @@
 ﻿title: _5PRE
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+Mom has been so sad lately.
+She must miss our grandparents since we can’t visit them anymore.
+I have a plan.
+I bet I could make her laugh.
+She always found it funny, when i played with the hairstylists radio.
+===
+
+title: _5PREend
+---
+Hairstylist: Young man! What are you doing!
+Mom: laughing
+<<5POSTChangeScene StoreClerk>>
 ===

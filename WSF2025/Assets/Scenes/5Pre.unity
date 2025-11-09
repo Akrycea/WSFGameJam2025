@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 490971617}
   - component: {fileID: 490971616}
   - component: {fileID: 490971618}
+  - component: {fileID: 490971619}
   m_Layer: 0
   m_Name: StoreClerk
   m_TagString: Untagged
@@ -608,6 +609,21 @@ MonoBehaviour:
   - {fileID: -593645323410052155, guid: d0046c90b33fa854db9389d0dc0a8e35, type: 3}
   - {fileID: -629448147033983804, guid: ba09bb3691246874c95348497631df7c, type: 3}
   lookingAtPlayer: 0
+--- !u!114 &490971619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490971615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3f1393394862347a3d5157087be59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackout: {fileID: 0}
+  OST: {fileID: 0}
+  clips: []
 --- !u!1 &593625240
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   ai: {fileID: 490971618}
+  dialogueRunner: {fileID: 1456550708}
+  nazwaDialogu: _5PREend
 --- !u!61 &948841793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1255,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: startNode
-      value: _1PREAPOstart
+      value: _5PRE
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: yarnProject
@@ -1317,6 +1335,17 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
+--- !u!114 &1456550708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 1411745868}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2014014568
 PrefabInstance:
   m_ObjectHideFlags: 0

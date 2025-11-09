@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class RadioTuning : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class RadioTuning : MonoBehaviour
     public CameraManager cameraManager;
 
     private AudioSource audioSource;
+    public DialogueRunner dialogueRunner;
 
     public bool won = false;
     void Start()
@@ -32,6 +34,7 @@ public class RadioTuning : MonoBehaviour
         won = true;
         Debug.Log("Win puszczaj muzyke maciek");
         audioSource.Play();
+        dialogueRunner.StartDialogue("_5POSTra");
     }
 
 

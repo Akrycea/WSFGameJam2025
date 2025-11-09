@@ -105,4 +105,28 @@ public class YarnSceneManager : MonoBehaviour
         SceneManager.LoadScene("5PRE");
     }
 
+    [YarnCommand("5POSTChangeScene")]
+    public void changeScene7()
+    {
+        SceneManager.LoadScene("5Post");
+    }
+
+    [YarnCommand("BLACKSCREEN")]
+    public void blackscreen()
+    {
+        StartCoroutine(Wait2());
+    }
+
+    IEnumerator Wait2()
+    {
+        blackout.SetActive(true);
+      
+        yield return new WaitForSeconds(10);
+        Application.Quit();
+
+
+    }
+
+
+
 }

@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class RadioScore : MonoBehaviour
 {
     public float score = 0;
 
     public ClerkAI ai;
+    public DialogueRunner dialogueRunner;
+    public string nazwaDialogu;
 
     void Start()
     {
@@ -39,7 +42,8 @@ public class RadioScore : MonoBehaviour
         if (score > 20)
         {
             Debug.Log("win");
-            SceneManager.LoadScene("5POST");
+            dialogueRunner.StartDialogue(nazwaDialogu);
+            
         }
     }
 }
