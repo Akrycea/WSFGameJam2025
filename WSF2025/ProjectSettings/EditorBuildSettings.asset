@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/4POST.unity
     guid: 29438f01dc437064d96aa005ff6fc068
   - enabled: 1
-    path: Assets/Scenes/5Pre.unity
+    path: Assets/Scenes/5PRE.unity
     guid: e5b29b2e4433afb43833dbe7959f4e13
   - enabled: 1
     path: Assets/Scenes/5POST.unity
