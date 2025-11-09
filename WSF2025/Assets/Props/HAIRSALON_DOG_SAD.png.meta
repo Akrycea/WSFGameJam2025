@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HAIRSALON_DOG_SAD_0: 5215314512760313666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

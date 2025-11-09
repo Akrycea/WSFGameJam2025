@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1d1a1199416e7d46b96d36a7bc33e41
+guid: 337b85cb679121c4f9ef515bbb6a12f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9064806943534725420
-    second: CLOTH_B_0
+      213: -5797064193941798459
+    second: buy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CLOTH_B_0
+      name: buy_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 500
-        height: 273
+        width: 367
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c29b1e243e9accd70800000000000000
-      internalID: 9064806943534725420
+      spriteID: 5c186fb64d0bc8fa0800000000000000
+      internalID: -5797064193941798459
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< Updated upstream
     nameFileIdTable:
-      CLOTH_B_0: 9064806943534725420
+      buy_0: -5797064193941798459
+=======
+    nameFileIdTable: {}
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

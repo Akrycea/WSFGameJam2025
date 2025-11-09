@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MOM_MEMORIAL_SEPERATE_LAYER_0: 2597802741690484999
+      MOM_MEMORIAL_SEPERATE_LAYER_1: 7930954807200710647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
