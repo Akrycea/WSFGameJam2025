@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gosciu lezy_0: 7909241928444461436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
