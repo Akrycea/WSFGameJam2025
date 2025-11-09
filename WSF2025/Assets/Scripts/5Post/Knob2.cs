@@ -7,10 +7,14 @@ public class Knob2 : MonoBehaviour
     public bool Knob2isRight;
     [SerializeField] private float turningPoint;
     public float turningModifier;
+
+    private AudioSource audioSource;
+    public AudioClip[] clipList;
     void Start()
     {
         turningPoint = 1;
         Knob2isRight = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -39,5 +43,12 @@ public class Knob2 : MonoBehaviour
         {
             radioTuning.WinRadio();
         }
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = clipList[Random.Range(0, clipList.Length)];
+            audioSource.Play();
+        }
     }
+
 }

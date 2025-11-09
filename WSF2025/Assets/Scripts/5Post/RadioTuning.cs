@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -9,11 +10,14 @@ public class RadioTuning : MonoBehaviour
     private AudioSource audioSource;
     public DialogueRunner dialogueRunner;
 
+    public GameObject blackout;
+
     public bool won = false;
     void Start()
     {
         radioMinigame.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+        blackout.SetActive(false);
     }
 
 
@@ -35,6 +39,14 @@ public class RadioTuning : MonoBehaviour
         Debug.Log("Win puszczaj muzyke maciek");
         audioSource.Play();
         dialogueRunner.StartDialogue("_5POSTra");
+        blackout.SetActive(true);
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(15);
+        Application.Quit();
     }
 
 

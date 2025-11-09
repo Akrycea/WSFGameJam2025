@@ -10,6 +10,8 @@ public class RadioScore : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public string nazwaDialogu;
 
+    public bool startRadio = false;
+
     void Start()
     {
         
@@ -23,7 +25,11 @@ public class RadioScore : MonoBehaviour
             score = 0;
         }
 
-        score = score - Time.deltaTime/6;
+        if (startRadio)
+        {
+            score = score - Time.deltaTime / 6;
+
+        }
 
     }
 

@@ -9,6 +9,7 @@ public class YarnSceneManager : MonoBehaviour
     public GameObject OST;
     private AudioSource audioSource;
     public AudioClip[] clips;
+    public RadioScore radioScore;
 
     private void Start()
     {
@@ -125,6 +126,12 @@ public class YarnSceneManager : MonoBehaviour
         Application.Quit();
 
 
+    }
+
+    [YarnCommand("startRadio")]
+    public void startRadio()
+    {
+        radioScore.startRadio = true;
     }
 
 

@@ -5,10 +5,12 @@ using Yarn.Unity;
 public class DragCandy : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
+    private AudioSource audioSource;
+    private bool playedEnd = false;
 
     private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -19,6 +21,7 @@ public class DragCandy : MonoBehaviour
         {
             Debug.Log("dodany punkt");
             points++;
+            audioSource.Play();
         }
     }
 
@@ -27,13 +30,23 @@ public class DragCandy : MonoBehaviour
         if (points == 3)
         {
             Debug.Log("wygrana");
-            dialogueRunner.StartDialogue("_4POST1");
+            
+            if (!dialogueRunner.IsDialogueRunning && !playedEnd)
+            {
+                dialogueRunner.StartDialogue("_4POST1");
+                playedEnd = true;
+            }
             //po skoñczeniu dialogu cut do nastepnej sceny
         }
     }
 
+    private void OnMouseDown()
+    {
+        audioSource.Play();
+    }
 
-    
+
+
 
 }
 

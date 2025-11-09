@@ -5,11 +5,12 @@ She must miss our grandparents since we can’t visit them anymore.
 I have a plan.
 I bet I could make her laugh.
 She always found it funny, when i played with the hairstylists radio.
+<<startRadio StoreClerk>>
 ===
 
 title: _5PREend
 ---
 Hairstylist: Young man! What are you doing!
-Mom: laughing
+"My mom laughs."
 <<5POSTChangeScene StoreClerk>>
 ===

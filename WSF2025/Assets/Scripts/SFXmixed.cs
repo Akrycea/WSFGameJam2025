@@ -5,6 +5,7 @@ public class SFXmixed : MonoBehaviour
 {
     private AudioSource audioSource;
     public AudioClip[] clipList;
+    public RadioScore radioScore;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -13,7 +14,12 @@ public class SFXmixed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!audioSource.isPlaying)
+        
+    }
+
+    private void OnMouseDown()
+    {
+        if (!audioSource.isPlaying && radioScore.startRadio)
         {
             audioSource.clip = clipList[Random.Range(0, clipList.Length)];
             audioSource.Play();

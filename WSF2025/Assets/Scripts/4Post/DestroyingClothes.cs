@@ -7,13 +7,15 @@ public class DestroyingClothes : MonoBehaviour
     public Candies candiesScript;
     private bool grabbed = false;
 
+    private AudioSource audioSource;
+
     private Camera mainCamera;
 
 
     void Start()
     {
         mainCamera = Camera.main;
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -33,6 +35,7 @@ public class DestroyingClothes : MonoBehaviour
             Debug.Log("upad³o na ziemie i zepsu³o sie");
             candiesScript.clothesScore++;
             StartCoroutine(Wait());
+            audioSource.Play();
         }
     }
 
@@ -41,7 +44,7 @@ public class DestroyingClothes : MonoBehaviour
     {
         grabbed = true;
         gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-
+        audioSource.Play();
     }
 
     private void OnMouseUp()
