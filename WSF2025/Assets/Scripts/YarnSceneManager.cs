@@ -14,11 +14,25 @@ public class YarnSceneManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
-
+    //glos mamy
+    [YarnCommand("momVoice")]
+    public void momVoice()
+    {
+        audioSource.clip = clips[0];
+        audioSource.Play();
+    }
     [YarnCommand("momChangeScene")]
     public void changeScene()
     {
         SceneManager.LoadScene("1Post");
+    }
+
+    //glos holly
+    [YarnCommand("hollyVoice")]
+    public void hollyVoice()
+    {
+        audioSource.clip = clips[0];
+        audioSource.Play();
     }
 
     [YarnCommand("2PREChangeScene")]
@@ -48,19 +62,19 @@ public class YarnSceneManager : MonoBehaviour
     [YarnCommand("ScreamSund1")]
     public void ScreamSound()
     {
-        audioSource.clip = clips[0];
+        audioSource.clip = clips[1];
         audioSource.Play();
     }
     [YarnCommand("SeedSund1")]
     public void SeedSound1()
     {
-        audioSource.clip = clips[1];
+        audioSource.clip = clips[2];
         audioSource.Play();
     }
     [YarnCommand("SeedSund2")]
     public void SeedSound2()
     {
-        audioSource.clip = clips[2];
+        audioSource.clip = clips[3];
         audioSource.Play();
     }
 
