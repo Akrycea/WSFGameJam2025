@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class DragCandy : MonoBehaviour
 {
+    public DialogueRunner dialogueRunner;
 
     private void Start()
     {
@@ -25,8 +27,14 @@ public class DragCandy : MonoBehaviour
         if (points == 3)
         {
             Debug.Log("wygrana");
-            SceneManager.LoadScene("5PRE");
+            dialogueRunner.StartDialogue("_4POST1");
             //po skoñczeniu dialogu cut do nastepnej sceny
         }
     }
+
+
+    
+
 }
+
+

@@ -93,4 +93,10 @@ public class YarnSceneManager : MonoBehaviour
         SceneManager.LoadScene("2PRE");
     }
 
+    [YarnCommand("4POSTChangeScene")]
+    public void changeScene6()
+    {
+        SceneManager.LoadScene("5Pre");
+    }
+
 }
