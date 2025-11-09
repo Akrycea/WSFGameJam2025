@@ -22,6 +22,7 @@ public class NpcFridge : MonoBehaviour
 
         if(gonePoints == 3)
         {
+
             fridge.SetActive(true);
             Destroy(gameObject);
         }

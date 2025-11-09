@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 35899ba58ffe1454d820877c52118d54
+guid: 0342b897be0cc2449a697cd55d0e82df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3913693148917170037
-    second: BUTELKA_WODY_POST_0
+      213: -4545936010048634836
+    second: matka z dzieckiem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BUTELKA_WODY_POST_0
+      name: matka z dzieckiem_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 175
-        height: 544
+        x: 5
+        y: 16
+        width: 1104
+        height: 1996
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8089e211d4cfa9c0800000000000000
-      internalID: -3913693148917170037
+      spriteID: c200565c84799e0c0800000000000000
+      internalID: -4545936010048634836
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BUTELKA_WODY_POST_0: -3913693148917170037
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
