@@ -779,7 +779,10 @@ MonoBehaviour:
 --- !u!82 &503584069
 AudioSource:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1896,7 +1899,11 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e59845d0d04adc8478e5ef7ee30ec042, type: 3}
   m_Resource: {fileID: 8300000, guid: e59845d0d04adc8478e5ef7ee30ec042, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_PlayOnAwake: 0
+=======
+  m_PlayOnAwake: 1
+>>>>>>> Stashed changes
 =======
   m_PlayOnAwake: 1
 >>>>>>> Stashed changes
@@ -2151,7 +2158,11 @@ AudioSource:
   m_Volume: 0.303
   m_Pitch: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Loop: 1
+=======
+  Loop: 0
+>>>>>>> Stashed changes
 =======
   Loop: 0
 >>>>>>> Stashed changes
@@ -2266,6 +2277,9 @@ GameObject:
   - component: {fileID: 2137609258}
   - component: {fileID: 2137609255}
   - component: {fileID: 2137609259}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Ubranie2
@@ -2512,6 +2526,9 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
