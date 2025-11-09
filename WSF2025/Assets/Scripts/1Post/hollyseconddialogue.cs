@@ -6,13 +6,18 @@ public class hollyseconddialogue : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public ScaryRadio scaryRadio;
 
+
     private void Start()
     {
-        scaryRadio = GetComponent<ScaryRadio>();
+        
     }
 
     public void OnMouseDown()
     {
+        if(scaryRadio.done == false)
+        {
+            dialogueRunner.StartDialogue("_1POST");
+        } 
         if(scaryRadio.done == true)
         {
             dialogueRunner.StartDialogue("_1POST2");
