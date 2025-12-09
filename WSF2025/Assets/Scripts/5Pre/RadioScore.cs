@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
+using UnityEngine.UI;
 
 public class RadioScore : MonoBehaviour
 {
+    public Slider slider;
+    public GameObject sliderRadia;
     public float score = 0;
 
     public ClerkAI ai;
@@ -14,6 +17,9 @@ public class RadioScore : MonoBehaviour
 
     void Start()
     {
+        slider.maxValue = 20;
+        slider.minValue = 0;
+        sliderRadia.SetActive(false);
         
     }
 
@@ -28,12 +34,14 @@ public class RadioScore : MonoBehaviour
         if (startRadio)
         {
             score = score - Time.deltaTime / 6;
+            sliderRadia.SetActive(true);
 
         }
 
+        slider.value = score;
     }
 
-    private void OnMouseDown()
+    public void KnobTurned()
     {
         if (!ai.lookingAtPlayer)
         {

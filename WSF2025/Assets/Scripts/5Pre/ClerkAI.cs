@@ -13,7 +13,7 @@ public class ClerkAI : MonoBehaviour
 
     void Start()
     {
-        randomLookTimer = Random.Range(3f, 8f);  //random float between 3 and 10
+        randomLookTimer = Random.Range(3f, 5f);  //random float between 3 and 10
 
         randomBreakTimer = Random.Range(3f, 13f);
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Knob2 : MonoBehaviour
@@ -10,16 +11,27 @@ public class Knob2 : MonoBehaviour
 
     private AudioSource audioSource;
     public AudioClip[] clipList;
+
+
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         turningPoint = 1;
         Knob2isRight = false;
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0f);
     }
 
 
     void Update()
     {
+        if (!audioSource.isPlaying && Knob2isRight == false)
+        {
+            audioSource.clip = clipList[Random.Range(0, clipList.Length)];
+            StartCoroutine(Wait());
+        }
 
     }
 
@@ -44,11 +56,23 @@ public class Knob2 : MonoBehaviour
             radioTuning.WinRadio();
         }
 
-        if (!audioSource.isPlaying)
-        {
-            audioSource.clip = clipList[Random.Range(0, clipList.Length)];
-            audioSource.Play();
-        }
+
+    }
+
+    private void OnMouseOver()
+    {
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0.2f);
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0f);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.4f);
+        audioSource.Play();
     }
 
 }

@@ -1,29 +1,26 @@
+using System.Drawing;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class CameraRight : MonoBehaviour
+public class RadioKnobs5pre : MonoBehaviour
 {
-    public bool mouseRover = false;
-
-    public CameraManager cameraManager;
+    public RadioScore radioScore;
     private SpriteRenderer spriteRenderer;
-    private void Start()
+    
+    void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0f);
     }
-    private void OnMouseDown()
+
+    
+    void Update()
     {
-        if (cameraManager.canMoveCamera)
-        {
-            mouseRover = true;
-        }
+        
     }
 
-
-    private void OnMouseUp()
+    private void OnMouseDown()
     {
-        mouseRover = false;
+        radioScore.KnobTurned();
     }
 
     private void OnMouseOver()

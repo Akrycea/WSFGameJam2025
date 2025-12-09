@@ -2,6 +2,7 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class YarnSceneManager : MonoBehaviour
 {
@@ -128,11 +129,14 @@ public class YarnSceneManager : MonoBehaviour
 
     }
 
+
     [YarnCommand("startRadio")]
     public void startRadio()
     {
         radioScore.startRadio = true;
     }
+
+
 
 
 
