@@ -10,6 +10,9 @@ public class LetsTouchColliders : MonoBehaviour
     public bool ziarna;
     public string nazwaDialogu;
     public DialogueRunner dialogueRunner;
+    public bool PtakWKlatce = false;
+    public GameObject Ptak;
+
 
     private AudioSource audioSource;
 
@@ -42,15 +45,22 @@ public class LetsTouchColliders : MonoBehaviour
             {
                 puzzleMinigierka.Puzzle();
                 dialogueRunner.StartDialogue(nazwaDialogu);
+                PtakWKlatce = true;
             }
 
-            if (ziarna == true)
+            if (ziarna == true && PtakWKlatce == true)
             {
                 gameObject.SetActive(false);
                 dialogueRunner.StartDialogue(nazwaDialogu);
                 audioSource.Play();
             }
         }
+
+        if (Ptak.activeSelf == false)
+        {
+            PtakWKlatce = true;
+        }
     }
+
 
 }

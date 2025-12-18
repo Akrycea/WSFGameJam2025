@@ -276,7 +276,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127830173}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -526,6 +526,8 @@ MonoBehaviour:
   ziarna: 0
   nazwaDialogu: _2PRE1
   dialogueRunner: {fileID: 628773897}
+  PtakWKlatce: 0
+  Ptak: {fileID: 127830173}
 --- !u!61 &373608884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -650,7 +652,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373608881}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -836,6 +838,8 @@ MonoBehaviour:
   ziarna: 1
   nazwaDialogu: _2PRE3
   dialogueRunner: {fileID: 628773897}
+  PtakWKlatce: 0
+  Ptak: {fileID: 127830173}
 --- !u!114 &693543342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,6 +1106,8 @@ MonoBehaviour:
   ziarna: 1
   nazwaDialogu: _2PRE23
   dialogueRunner: {fileID: 628773897}
+  PtakWKlatce: 0
+  Ptak: {fileID: 127830173}
 --- !u!114 &810797658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,6 +2108,8 @@ MonoBehaviour:
   ziarna: 1
   nazwaDialogu: _2PRE2
   dialogueRunner: {fileID: 628773897}
+  PtakWKlatce: 0
+  Ptak: {fileID: 127830173}
 --- !u!114 &2061226743
 MonoBehaviour:
   m_ObjectHideFlags: 0
