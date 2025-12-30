@@ -51,6 +51,7 @@ public class YarnSceneManager : MonoBehaviour
 
     IEnumerator Wait()
     {
+        
         blackout.SetActive(true);
         OST.SetActive(false);
         audioSource.Play();
