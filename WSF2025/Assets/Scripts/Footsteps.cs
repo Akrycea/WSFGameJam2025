@@ -10,7 +10,7 @@ public class Footsteps : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    void OnMouseOver()
+    void OnMouseDown()
     {
         if (!audioSource.isPlaying)
         { 

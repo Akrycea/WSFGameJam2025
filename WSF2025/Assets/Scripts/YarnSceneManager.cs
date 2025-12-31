@@ -37,6 +37,14 @@ public class YarnSceneManager : MonoBehaviour
         audioSource.Play();
     }
 
+    private Brick brick;
+    [YarnCommand("brickCanPickUp")]
+    public void brickHolly()
+    {
+        brick = GameObject.Find("Brick").GetComponent<Brick>();
+        brick.canBeGrabbed = true;
+    }
+
     [YarnCommand("2PREChangeScene")]
     public void changeScene2()
     {

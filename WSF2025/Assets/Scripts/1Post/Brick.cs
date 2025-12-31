@@ -7,6 +7,7 @@ public class Brick : MonoBehaviour
 
     public bool windowBroken = false;
 
+    public bool canBeGrabbed = false;
 
     private bool grabbed = false;
 
@@ -54,9 +55,12 @@ public class Brick : MonoBehaviour
     //sprawdza czy klikniety i wylacza fizyke jesli tak
     private void OnMouseDown()
     {
-        grabbed = true;
-        gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        audioSource.Play();
+        if (canBeGrabbed)
+        {
+            grabbed = true;
+            gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            audioSource.Play();
+        }
 
     }
 

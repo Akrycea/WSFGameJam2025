@@ -17,6 +17,7 @@ Holly: …
 Holly: You know, if I could get my hands on that expensive medicine I could for sure try to talk Them out of putting you in one of those hospital facilities no one gets out of.
 <<hollyVoice holly>>
 Holly: We could break in. For old time’s sake.
+<<brickCanPickUp holly>>
 ===
 
 title: _1POST1

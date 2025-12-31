@@ -10,7 +10,7 @@ public class CameraLeft : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0f);
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 1f);
     }
 
     private void OnMouseDown()
@@ -29,12 +29,12 @@ public class CameraLeft : MonoBehaviour
 
     private void OnMouseOver()
     {
-        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0.2f);
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0.5f);
     }
 
     private void OnMouseExit()
     {
-        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 0f);
+        spriteRenderer.color = new UnityEngine.Color(1.0f, 1.0f, 1.0f, 1f);
     }
 
 }
